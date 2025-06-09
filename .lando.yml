@@ -1,0 +1,4 @@
+name: wordpresschallenge
+recipe: wordpress
+config:
+  webroot: .

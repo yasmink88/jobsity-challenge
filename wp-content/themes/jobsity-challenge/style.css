@@ -1,0 +1,82 @@
+/*
+Theme Name: Jobsity Challenge Theme
+Description: A movie and actors database theme for the Jobsity challenge
+Version: 1.0.0
+Author: Yasmin Khalaf
+Author URI: Your Website URL
+Text Domain: jobsity-challenge
+*/
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1.site-title a {
+    padding: 0 2rem;
+    text-decoration: none !important;
+    color: #2e2e2e;
+}
+
+/* Container for the nav */
+nav {
+    background-color: #333;
+    padding: 1rem 2rem;
+}
+
+/* The menu list */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Menu items */
+nav ul li {
+    margin: 0;
+}
+
+/* Menu links */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.tmdb-movies, .tmdb-actors {
+  padding: 2rem;
+}
+.movie-grid, .actor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+.movie-card, .actor-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.movie-card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
